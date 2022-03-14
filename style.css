@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(23, 180, 180);
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+.content{
+    width: 780px;
+    height: 480px;
+    background-color: rgb(51, 37, 37);
+    border-radius: 15px;
+    margin: 70px auto;
+    box-shadow: 5px 15px 50px 20px rgba(0, 0, 0, 0.7);
+    
+
+}
+.content .title{
+    width: 200px;
+    float: left;
+}
+.title h1{
+    display: flex;
+    padding: 150px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: rgb(23, 180, 180);
+    font-weight:bolder;
+    font-size: 2em;
+}
+.content .data{
+    width: 550px;
+    float: right;
+    position: relative;
+}
+.form{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+}
+.form .inputBox{
+    position: relative;
+    width:200px;
+}
+.form form{
+    margin-right: 50px;
+}
+.form .inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #fff;
+    background: transparent;
+    font-size: 1em;
+    outline: none;
+}
+.form .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 10px 0;
+    transition: 0.5s ease-in-out;
+}
+.form input[type="button"]{
+    padding: 10px 17px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    background: rgb(0, 58, 58);
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.form input[type="button"]:hover{
+    color: #fff;
+    background: rgb(2, 46, 46);
+}
+.form .inputBox input:focus ~ label,
+.form .inputBox input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: teal;
+    font-size: 12px;
+}
+
+p{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 20px;
+}
